@@ -29,10 +29,22 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
+				 <configuration>
+        <cloudHubDeployment>
+            <uri>https://anypoint.mulesoft.com</uri>
+            <muleVersion>4.2.2</muleVersion>
+            <username>M28</username>
+            <password>Misbah@28</password>
+            <applicationName>test1</applicationName>
+            <environment>Sandbox</environment>
+            <workerType>MICRO</workerType>
+            <objectStoreV2>true</objectStoreV2>
+        </cloudHubDeployment>
+    </configuration>
 			</plugin>
 		</plugins>
 	</build>
-
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.mule.connectors</groupId>
